@@ -57,7 +57,7 @@ const Select = styled.select`
 /**
  *
  *@discription - This function is render the header section of the component
- @return - Jsx of the Header section
+  @return - Jsx of the Header section
  */
 const HeaderComponent = props => {
   const { handleSearch, searchValue, handleSubmit, setSorting } = props;

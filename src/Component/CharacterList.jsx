@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import CharacterCard from './CharacterCard';
+import CharacterCard from './CharacterCard.jsx';
 
 const CharacterListBody = styled.div`
   background: #000000;
@@ -14,7 +14,7 @@ const CharacterListBody = styled.div`
 /**
  *
  *@discription - This function is render the Character List section of the component
- @return - Jsx of the Character list section
+  @return - Jsx of the Character list section
  */
 const CharacterList = ({ characters }) => (
   // eslint-disable-next-line react/jsx-filename-extension

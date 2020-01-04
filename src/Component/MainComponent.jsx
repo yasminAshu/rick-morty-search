@@ -1,8 +1,8 @@
 import React from 'react';
 import Loader from 'react-loader';
 import styled from 'styled-components';
-import HeaderComponent from './HeaderComponent';
-import CharacterList from './CharacterList';
+import HeaderComponent from './HeaderComponent.jsx';
+import CharacterList from './CharacterList.jsx';
 import { getCharactersByName, getAllCharacters } from '../lib/api';
 
 const AppContainer = styled.div`
