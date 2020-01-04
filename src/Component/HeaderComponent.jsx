@@ -72,16 +72,13 @@ const HeaderComponent = props => {
             type="text"
             placeholder="Character Name"
             value={searchValue}
-          />
-          <Button
-            onClick={handleSubmit}
             onKeyPress={e => {
-              if (e.keyCode === '13') {
+              if (e.key === 'Enter') {
                 handleSubmit();
               }
             }}
-            type="submit"
-          >
+          />
+          <Button onClick={handleSubmit} type="submit">
             Search
           </Button>
         </Search>

@@ -2,12 +2,15 @@
   "name": "rick-morty",
   "version": "1.0.0",
   "description": "Rick And Morty ",
+  "homepage": "https://yasminAshu.github.io/rick-morty-search/",
   "main": "index.js",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack-dev-server --open",
     "build": "cross-env NODE_ENV=production webpack",
     "format": "prettier --write \"{,!(node_modules)/**/}*.{js,jsx}\"",
-    "ssr": "node server/index.js"
+    "ssr": "node server/index.js",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d dist"
   },
   "lint-staged": {
     "*.{js,jsx,scss,css,md}": [
@@ -26,6 +29,7 @@
   "dependencies": {
     "axios": "^0.19.0",
     "express": "^4.17.1",
+    "gh-pages": "^2.1.1",
     "ignore-styles": "^5.0.1",
     "prettier": "^1.19.1",
     "prop-types": "^15.7.2",
