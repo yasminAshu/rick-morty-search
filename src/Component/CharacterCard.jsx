@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const CharacterContainer = styled.div`
-  flex: 0 0 25%;
-  max-width: 25%;
+  flex: 0 0 50%;
+  max-width: 50%;
   padding-right: 5px;
   padding-left: 5px;
   box-sizing: border-box;
@@ -21,9 +21,9 @@ const CharacterContainer = styled.div`
       margin-top: 5px;
     }
   }
-  @media (max-width: 576px) {
-    flex: 0 0 50%;
-    max-width: 50%;
+  @media (min-width: 576px) {
+    flex: 0 0 25%;
+    max-width: 25%;
   }
 `;
 
@@ -42,7 +42,6 @@ const CharacterDetail = styled.div`
   padding: 15px;
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
-}
 `;
 
 const UL = styled.ul`
@@ -69,21 +68,21 @@ const LI = styled.li`
 const CharacterHeader = styled.div`
   padding: 7px 10px;
   h3 {
-    font-size: 18px;
+    font-size: 16px;
     color: #fff;
     margin: 0;
     line-height: 30px;
-    @media (max-width: 576px) {
-      font-size: 16px;
+    @media (min-width: 576px) {
+      font-size: 18px;
     }
   }
   p {
-    font-size: 13px;
+    font-size: 10px;
     color: #fff;
     margin: 0;
     line-height: 18px;
-    @media (max-width: 576px) {
-      font-size: 10px;
+    @media (min-width: 576px) {
+      font-size: 13px;
     }
   }
 `;

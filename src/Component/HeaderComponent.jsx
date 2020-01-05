@@ -4,9 +4,9 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 const FilterComponent = styled.div`
-  width: auto;
-  @media (max-width: 576px) {
-    width: 100%;
+  width: 100%;
+  @media (min-width: 576px) {
+    width: auto;
   }
 `;
 const Label = styled.label`
@@ -15,7 +15,7 @@ const Label = styled.label`
 `;
 const SearchInput = styled.input`
   display: block;
-  width: auto;
+  width: 90%;
   padding: 6px 12px;
   font-size: 1rem;
   font-weight: 400;
@@ -24,8 +24,8 @@ const SearchInput = styled.input`
   background-color: #fff;
   border: 1px solid #ced4da;
   border-radius: 8px;
-  @media (max-width: 576px) {
-    width: 90%;
+  @media (min-width: 576px) {
+    width: auto;
   }
 `;
 

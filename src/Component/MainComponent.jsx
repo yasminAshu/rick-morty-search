@@ -16,12 +16,11 @@ const HeaderSection = styled.section`
 const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   max-width: 100%;
-  max-width: 1140px;
   margin: 15px auto;
-  @media (max-width: 576px) {
-    max-width: 100%;
-    flex-direction: column;
+  @media (min-width: 576px) {
+    max-width: 1140px;
   }
 `;
 const ResultsSection = styled.section`
@@ -120,7 +119,8 @@ class MainComponent extends React.Component {
             <HeaderComponent
               handleSubmit={this.onHandleSubmit}
               handleSearch={this.onHandleSearch}
-              setSorting={this.setSorting}/>
+              setSorting={this.setSorting}
+            />
           </HeaderContainer>
         </HeaderSection>
 
